@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Poppins } from "next/font/google";
 import Navbar from "./ui/navbar";
+import Footer from "./ui/footer";
 
 const poppins = Poppins({
   weight: "400",
@@ -24,8 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
-      <body className={`${poppins.className} bg-[#fff1ed]`}>{children}</body>
+      <body className={poppins.className}>
+        <Navbar />
+
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

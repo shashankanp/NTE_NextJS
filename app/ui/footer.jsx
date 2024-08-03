@@ -64,7 +64,7 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#ffc7b7]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
@@ -79,8 +79,18 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 text-gray-500">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+          <p className="text-center text-xl leading-5 text-grey-500">
+            &copy; 2020 NotTheEnd
+          </p>
+          <p className="text-center text-xl leading-5 text-grey-500 mt-4">
+            Contact us at{" "}
+            <a
+              href="mailto:avani@nottheend.org"
+              target="_blank"
+              className="font-bold underline"
+            >
+              avani@nottheend.org
+            </a>
           </p>
         </div>
       </div>

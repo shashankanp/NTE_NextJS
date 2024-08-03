@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white shadow fixed top-0 w-full mb-[100px]"
+      className="bg-[#dd007a1a] backdrop-blur-md shadow w-full sticky top-0 z-50"
     >
       {({ open }) => (
         <>
@@ -37,7 +37,7 @@ export default function Navbar() {
                     )}
                   </DisclosureButton>
                 </div>
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex flex-shrink-0 items-center mr-auto">
                   <Image
                     src={Logo}
                     className="h-8 w-8"
@@ -47,7 +47,6 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
                     href="#"
                     className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
@@ -62,7 +61,7 @@ export default function Navbar() {
                   </a>
                   <Menu as="div" className="relative ml-3">
                     <div>
-                      <MenuButton className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                      <MenuButton className="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
                         2021 Conference
@@ -132,7 +131,6 @@ export default function Navbar() {
 
           <DisclosurePanel className="md:hidden">
             <div className="space-y-1 pb-3 pt-2">
-              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <DisclosureButton
                 as="a"
                 href="#"
